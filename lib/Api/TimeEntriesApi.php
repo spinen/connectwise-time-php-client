@@ -97,7 +97,7 @@ class TimeEntriesApi
      * @param string $conditions  (optional)
      * @param string $custom_field_conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count
+     * @return \Spinen\ConnectWise\Clients\Time\Model\Count
      */
     public function timeEntriesCountGet($conditions = null, $custom_field_conditions = null)
     {
@@ -115,7 +115,7 @@ class TimeEntriesApi
      * @param string $conditions  (optional)
      * @param string $custom_field_conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeEntriesCountGetWithHttpInfo($conditions = null, $custom_field_conditions = null)
     {
@@ -161,19 +161,19 @@ class TimeEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count',
+                '\Spinen\ConnectWise\Clients\Time\Model\Count',
                 '/time/entries/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -196,7 +196,7 @@ class TimeEntriesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]
+     * @return \Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]
      */
     public function timeEntriesGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -218,7 +218,7 @@ class TimeEntriesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Model\TimeEntry[], HTTP status code, HTTP response headers (array of strings)
      */
     public function timeEntriesGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -280,19 +280,19 @@ class TimeEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]',
+                '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]',
                 '/time/entries'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -385,7 +385,7 @@ class TimeEntriesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -403,7 +403,7 @@ class TimeEntriesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry
+     * @return \Spinen\ConnectWise\Clients\Time\Model\TimeEntry
      */
     public function timeEntriesIdGet($id)
     {
@@ -420,7 +420,7 @@ class TimeEntriesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeEntriesIdGetWithHttpInfo($id)
     {
@@ -470,19 +470,19 @@ class TimeEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
+                '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
                 '/time/entries/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -499,9 +499,9 @@ class TimeEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry
+     * @return \Spinen\ConnectWise\Clients\Time\Model\TimeEntry
      */
     public function timeEntriesIdPatch($id, $operations)
     {
@@ -517,9 +517,9 @@ class TimeEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeEntriesIdPatchWithHttpInfo($id, $operations)
     {
@@ -578,19 +578,19 @@ class TimeEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
+                '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
                 '/time/entries/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -607,9 +607,9 @@ class TimeEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry
+     * @return \Spinen\ConnectWise\Clients\Time\Model\TimeEntry
      */
     public function timeEntriesIdPut($id, $time_entry)
     {
@@ -625,9 +625,9 @@ class TimeEntriesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeEntriesIdPutWithHttpInfo($id, $time_entry)
     {
@@ -686,19 +686,19 @@ class TimeEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
+                '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
                 '/time/entries/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -714,9 +714,9 @@ class TimeEntriesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry
+     * @return \Spinen\ConnectWise\Clients\Time\Model\TimeEntry
      */
     public function timeEntriesPost($time_entry)
     {
@@ -731,9 +731,9 @@ class TimeEntriesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Model\TimeEntry $time_entry  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Model\TimeEntry, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeEntriesPostWithHttpInfo($time_entry)
     {
@@ -780,19 +780,19 @@ class TimeEntriesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
+                '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry',
                 '/time/entries'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\TimeEntry', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

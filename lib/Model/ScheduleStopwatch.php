@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
+namespace Spinen\ConnectWise\Clients\Time\Model;
 
 use \ArrayAccess;
 
@@ -55,8 +55,8 @@ class ScheduleStopwatch implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_info' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata',
-        'agreement' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference',
+        '_info' => '\Spinen\ConnectWise\Clients\Time\Model\Metadata',
+        'agreement' => '\Spinen\ConnectWise\Clients\Time\Model\AgreementReference',
         'billable_option' => 'string',
         'business_unit_id' => 'int',
         'date_entered' => '\DateTime',
@@ -64,16 +64,16 @@ class ScheduleStopwatch implements ArrayAccess
         'id' => 'int',
         'internal_notes' => 'string',
         'location_id' => 'int',
-        'member' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference',
-        'mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid',
+        'member' => '\Spinen\ConnectWise\Clients\Time\Model\MemberReference',
+        'mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Model\Guid',
         'notes' => 'string',
         'schedule_id' => 'int',
-        'schedule_mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid',
+        'schedule_mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Model\Guid',
         'start_time' => '\DateTime',
         'status' => 'string',
         'total_pause_time' => 'int',
-        'work_role' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference',
-        'work_type' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference'
+        'work_role' => '\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference',
+        'work_type' => '\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference'
     ];
 
     public static function swaggerTypes()
@@ -317,7 +317,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Time\Model\Metadata
      */
     public function getInfo()
     {
@@ -326,7 +326,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -338,7 +338,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets agreement
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\AgreementReference
      */
     public function getAgreement()
     {
@@ -347,7 +347,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets agreement
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference $agreement
+     * @param \Spinen\ConnectWise\Clients\Time\Model\AgreementReference $agreement
      * @return $this
      */
     public function setAgreement($agreement)
@@ -510,7 +510,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets member
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\MemberReference
      */
     public function getMember()
     {
@@ -519,7 +519,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference $member
+     * @param \Spinen\ConnectWise\Clients\Time\Model\MemberReference $member
      * @return $this
      */
     public function setMember($member)
@@ -531,7 +531,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets mobile_guid
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid
+     * @return \Spinen\ConnectWise\Clients\Time\Model\Guid
      */
     public function getMobileGuid()
     {
@@ -540,7 +540,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets mobile_guid
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid $mobile_guid
+     * @param \Spinen\ConnectWise\Clients\Time\Model\Guid $mobile_guid
      * @return $this
      */
     public function setMobileGuid($mobile_guid)
@@ -598,7 +598,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets schedule_mobile_guid
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid
+     * @return \Spinen\ConnectWise\Clients\Time\Model\Guid
      */
     public function getScheduleMobileGuid()
     {
@@ -607,7 +607,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets schedule_mobile_guid
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid $schedule_mobile_guid
+     * @param \Spinen\ConnectWise\Clients\Time\Model\Guid $schedule_mobile_guid
      * @return $this
      */
     public function setScheduleMobileGuid($schedule_mobile_guid)
@@ -686,7 +686,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets work_role
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference
      */
     public function getWorkRole()
     {
@@ -695,7 +695,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets work_role
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference $work_role
+     * @param \Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference $work_role
      * @return $this
      */
     public function setWorkRole($work_role)
@@ -707,7 +707,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Gets work_type
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference
      */
     public function getWorkType()
     {
@@ -716,7 +716,7 @@ class ScheduleStopwatch implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference $work_type
+     * @param \Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference $work_type
      * @return $this
      */
     public function setWorkType($work_type)

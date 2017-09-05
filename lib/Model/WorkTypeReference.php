@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
+namespace Spinen\ConnectWise\Clients\Time\Model;
 
 use \ArrayAccess;
 
@@ -57,7 +57,7 @@ class WorkTypeReference implements ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'name' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Time\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -200,7 +200,7 @@ class WorkTypeReference implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Time\Model\Metadata
      */
     public function getInfo()
     {
@@ -209,7 +209,7 @@ class WorkTypeReference implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

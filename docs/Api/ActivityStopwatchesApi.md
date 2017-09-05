@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **timeActivitystopwatchesCountGet**
-> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count timeActivitystopwatchesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\Time\Model\Count timeActivitystopwatchesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Time\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeActivitystopwatchesGet**
-> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch[] timeActivitystopwatchesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch[] timeActivitystopwatchesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch[]**](../Model/ActivityStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch[]**](../Model/ActivityStopwatch.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeActivitystopwatchesIdGet**
-> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesIdGet($id)
+> \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeActivitystopwatchesIdPatch**
-> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPas
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\ActivityStopwatchesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->timeActivitystopwatchesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeActivitystopwatchesIdPut**
-> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesIdPut($id, $activity_stopwatch)
+> \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesIdPut($id, $activity_stopwatch)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPas
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\ActivityStopwatchesApi();
 $id = 56; // int | 
-$activity_stopwatch = new \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch(); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch | 
+$activity_stopwatch = new \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch(); // \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch | 
 
 try {
     $result = $api_instance->timeActivitystopwatchesIdPut($id, $activity_stopwatch);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **activity_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch.md)|  |
+ **activity_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeActivitystopwatchesPost**
-> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesPost($activity_stopwatch)
+> \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch timeActivitystopwatchesPost($activity_stopwatch)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setUse
 Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\ActivityStopwatchesApi();
-$activity_stopwatch = new \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch(); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch | 
+$activity_stopwatch = new \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch(); // \Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch | 
 
 try {
     $result = $api_instance->timeActivitystopwatchesPost($activity_stopwatch);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **activity_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch.md)|  |
+ **activity_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Model\ActivityStopwatch**](../Model/ActivityStopwatch.md)
 
 ### Authorization
 

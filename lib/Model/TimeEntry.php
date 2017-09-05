@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
+namespace Spinen\ConnectWise\Clients\Time\Model;
 
 use \ArrayAccess;
 
@@ -56,15 +56,15 @@ class TimeEntry implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'company' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\CompanyReference',
+        'company' => '\Spinen\ConnectWise\Clients\Time\Model\CompanyReference',
         'charge_to_id' => 'int',
         'charge_to_type' => 'string',
-        'member' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference',
+        'member' => '\Spinen\ConnectWise\Clients\Time\Model\MemberReference',
         'location_id' => 'int',
         'business_unit_id' => 'int',
-        'work_type' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference',
-        'work_role' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference',
-        'agreement' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference',
+        'work_type' => '\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference',
+        'work_role' => '\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference',
+        'agreement' => '\Spinen\ConnectWise\Clients\Time\Model\AgreementReference',
         'time_start' => '\DateTime',
         'time_end' => '\DateTime',
         'hours_deduct' => 'double',
@@ -82,10 +82,10 @@ class TimeEntry implements ArrayAccess
         'hours_billed' => 'double',
         'entered_by' => 'string',
         'date_entered' => '\DateTime',
-        'invoice' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\InvoiceReference',
+        'invoice' => '\Spinen\ConnectWise\Clients\Time\Model\InvoiceReference',
         'hourly_rate' => 'double',
-        '_info' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata',
-        'custom_fields' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\CustomFieldValue[]'
+        '_info' => '\Spinen\ConnectWise\Clients\Time\Model\Metadata',
+        'custom_fields' => '\Spinen\ConnectWise\Clients\Time\Model\CustomFieldValue[]'
     ];
 
     public static function swaggerTypes()
@@ -379,7 +379,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets company
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\CompanyReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\CompanyReference
      */
     public function getCompany()
     {
@@ -388,7 +388,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\CompanyReference $company If chargeToId is not specified, we asume you enter time against the company specified
+     * @param \Spinen\ConnectWise\Clients\Time\Model\CompanyReference $company If chargeToId is not specified, we asume you enter time against the company specified
      * @return $this
      */
     public function setCompany($company)
@@ -446,7 +446,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets member
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\MemberReference
      */
     public function getMember()
     {
@@ -455,7 +455,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference $member
+     * @param \Spinen\ConnectWise\Clients\Time\Model\MemberReference $member
      * @return $this
      */
     public function setMember($member)
@@ -509,7 +509,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets work_type
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference
      */
     public function getWorkType()
     {
@@ -518,7 +518,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference $work_type
+     * @param \Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference $work_type
      * @return $this
      */
     public function setWorkType($work_type)
@@ -530,7 +530,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets work_role
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference
      */
     public function getWorkRole()
     {
@@ -539,7 +539,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets work_role
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference $work_role
+     * @param \Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference $work_role
      * @return $this
      */
     public function setWorkRole($work_role)
@@ -551,7 +551,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets agreement
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\AgreementReference
      */
     public function getAgreement()
     {
@@ -560,7 +560,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets agreement
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference $agreement
+     * @param \Spinen\ConnectWise\Clients\Time\Model\AgreementReference $agreement
      * @return $this
      */
     public function setAgreement($agreement)
@@ -933,7 +933,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets invoice
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\InvoiceReference
+     * @return \Spinen\ConnectWise\Clients\Time\Model\InvoiceReference
      */
     public function getInvoice()
     {
@@ -942,7 +942,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets invoice
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\InvoiceReference $invoice
+     * @param \Spinen\ConnectWise\Clients\Time\Model\InvoiceReference $invoice
      * @return $this
      */
     public function setInvoice($invoice)
@@ -975,7 +975,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Time\Model\Metadata
      */
     public function getInfo()
     {
@@ -984,7 +984,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -996,7 +996,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Gets custom_fields
-     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\CustomFieldValue[]
+     * @return \Spinen\ConnectWise\Clients\Time\Model\CustomFieldValue[]
      */
     public function getCustomFields()
     {
@@ -1005,7 +1005,7 @@ class TimeEntry implements ArrayAccess
 
     /**
      * Sets custom_fields
-     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\CustomFieldValue[] $custom_fields
+     * @param \Spinen\ConnectWise\Clients\Time\Model\CustomFieldValue[] $custom_fields
      * @return $this
      */
     public function setCustomFields($custom_fields)
