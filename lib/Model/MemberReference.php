@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Model;
+namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
 
 use \ArrayAccess;
 
@@ -58,7 +58,7 @@ class MemberReference implements ArrayAccess
         'id' => 'int',
         'identifier' => 'string',
         'name' => 'string',
-        '_info' => '\Spinen\ConnectWise\Clients\Time\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -226,7 +226,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Time\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata
      */
     public function getInfo()
     {
@@ -235,7 +235,7 @@ class MemberReference implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

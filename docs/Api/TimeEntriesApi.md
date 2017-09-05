@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **timeEntriesCountGet**
-> \Spinen\ConnectWise\Clients\Time\Model\Count timeEntriesCountGet($conditions, $custom_field_conditions)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count timeEntriesCountGet($conditions, $custom_field_conditions)
 
 
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeEntriesGet**
-> \Spinen\ConnectWise\Clients\Time\Model\TimeEntry[] timeEntriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[] timeEntriesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]**](../Model/TimeEntry.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry[]**](../Model/TimeEntry.md)
 
 ### Authorization
 
@@ -173,7 +173,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeEntriesIdGet**
-> \Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesIdGet($id)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesIdGet($id)
 
 
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
 
 ### Authorization
 
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeEntriesIdPatch**
-> \Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesIdPatch($id, $operations)
 
 
 
@@ -239,7 +239,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPas
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\TimeEntriesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->timeEntriesIdPatch($id, $operations);
@@ -255,11 +255,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeEntriesIdPut**
-> \Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesIdPut($id, $time_entry)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesIdPut($id, $time_entry)
 
 
 
@@ -290,7 +290,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPas
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\TimeEntriesApi();
 $id = 56; // int | 
-$time_entry = new \Spinen\ConnectWise\Clients\Time\Model\TimeEntry(); // \Spinen\ConnectWise\Clients\Time\Model\TimeEntry | 
+$time_entry = new \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry(); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry | 
 
 try {
     $result = $api_instance->timeEntriesIdPut($id, $time_entry);
@@ -306,11 +306,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **time_entry** | [**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/\Spinen\ConnectWise\Clients\Time\Model\TimeEntry.md)|  |
+ **time_entry** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
 
 ### Authorization
 
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeEntriesPost**
-> \Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesPost($time_entry)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry timeEntriesPost($time_entry)
 
 
 
@@ -340,7 +340,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setUse
 Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\TimeEntriesApi();
-$time_entry = new \Spinen\ConnectWise\Clients\Time\Model\TimeEntry(); // \Spinen\ConnectWise\Clients\Time\Model\TimeEntry | 
+$time_entry = new \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry(); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry | 
 
 try {
     $result = $api_instance->timeEntriesPost($time_entry);
@@ -355,11 +355,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **time_entry** | [**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/\Spinen\ConnectWise\Clients\Time\Model\TimeEntry.md)|  |
+ **time_entry** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TimeEntry**](../Model/TimeEntry.md)
 
 ### Authorization
 

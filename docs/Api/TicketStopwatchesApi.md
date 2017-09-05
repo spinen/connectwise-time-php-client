@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **timeTicketstopwatchesCountGet**
-> \Spinen\ConnectWise\Clients\Time\Model\Count timeTicketstopwatchesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count timeTicketstopwatchesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeTicketstopwatchesGet**
-> \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch[] timeTicketstopwatchesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch[] timeTicketstopwatchesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch[]**](../Model/TicketStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch[]**](../Model/TicketStopwatch.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeTicketstopwatchesIdGet**
-> \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesIdGet($id)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeTicketstopwatchesIdPatch**
-> \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPas
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\TicketStopwatchesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->timeTicketstopwatchesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeTicketstopwatchesIdPut**
-> \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesIdPut($id, $ticket_stopwatch)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesIdPut($id, $ticket_stopwatch)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPas
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\TicketStopwatchesApi();
 $id = 56; // int | 
-$ticket_stopwatch = new \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch(); // \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch | 
+$ticket_stopwatch = new \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch(); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch | 
 
 try {
     $result = $api_instance->timeTicketstopwatchesIdPut($id, $ticket_stopwatch);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **ticket_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch.md)|  |
+ **ticket_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **timeTicketstopwatchesPost**
-> \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesPost($ticket_stopwatch)
+> \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch timeTicketstopwatchesPost($ticket_stopwatch)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setUse
 Spinen\ConnectWise\Clients\Time\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\Time\Api\TicketStopwatchesApi();
-$ticket_stopwatch = new \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch(); // \Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch | 
+$ticket_stopwatch = new \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch(); // \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch | 
 
 try {
     $result = $api_instance->timeTicketstopwatchesPost($ticket_stopwatch);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **ticket_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch.md)|  |
+ **ticket_stopwatch** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
+[**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketStopwatch**](../Model/TicketStopwatch.md)
 
 ### Authorization
 

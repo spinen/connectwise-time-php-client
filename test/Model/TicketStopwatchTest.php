@@ -203,9 +203,9 @@ class TicketStopwatchTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test attribute "ticket_id"
+     * Test attribute "ticket"
      */
-    public function testPropertyTicketId()
+    public function testPropertyTicket()
     {
 
     }

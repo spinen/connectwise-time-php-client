@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Api;
+namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Api;
 
 use \Spinen\ConnectWise\Clients\Time\ApiClient;
 use \Spinen\ConnectWise\Clients\Time\ApiException;
@@ -96,7 +96,7 @@ class ScheduleStopwatchesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Model\Count
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count
      */
     public function timeSchedulestopwatchesCountGet($conditions = null)
     {
@@ -113,7 +113,7 @@ class ScheduleStopwatchesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeSchedulestopwatchesCountGetWithHttpInfo($conditions = null)
     {
@@ -155,19 +155,19 @@ class ScheduleStopwatchesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Model\Count',
+                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count',
                 '/time/schedulestopwatches/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -190,7 +190,7 @@ class ScheduleStopwatchesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]
      */
     public function timeSchedulestopwatchesGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -212,7 +212,7 @@ class ScheduleStopwatchesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[], HTTP status code, HTTP response headers (array of strings)
      */
     public function timeSchedulestopwatchesGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -274,19 +274,19 @@ class ScheduleStopwatchesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]',
+                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]',
                 '/time/schedulestopwatches'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -379,7 +379,7 @@ class ScheduleStopwatchesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -397,7 +397,7 @@ class ScheduleStopwatchesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
      */
     public function timeSchedulestopwatchesIdGet($id)
     {
@@ -414,7 +414,7 @@ class ScheduleStopwatchesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeSchedulestopwatchesIdGetWithHttpInfo($id)
     {
@@ -464,19 +464,19 @@ class ScheduleStopwatchesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
+                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
                 '/time/schedulestopwatches/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -493,9 +493,9 @@ class ScheduleStopwatchesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
      */
     public function timeSchedulestopwatchesIdPatch($id, $operations)
     {
@@ -511,9 +511,9 @@ class ScheduleStopwatchesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeSchedulestopwatchesIdPatchWithHttpInfo($id, $operations)
     {
@@ -572,19 +572,19 @@ class ScheduleStopwatchesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
+                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
                 '/time/schedulestopwatches/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -601,9 +601,9 @@ class ScheduleStopwatchesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
      */
     public function timeSchedulestopwatchesIdPut($id, $schedule_stopwatch)
     {
@@ -619,9 +619,9 @@ class ScheduleStopwatchesApi
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeSchedulestopwatchesIdPutWithHttpInfo($id, $schedule_stopwatch)
     {
@@ -680,19 +680,19 @@ class ScheduleStopwatchesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
+                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
                 '/time/schedulestopwatches/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -708,9 +708,9 @@ class ScheduleStopwatchesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch
      */
     public function timeSchedulestopwatchesPost($schedule_stopwatch)
     {
@@ -725,9 +725,9 @@ class ScheduleStopwatchesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Time API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch $schedule_stopwatch  (required)
      * @throws \Spinen\ConnectWise\Clients\Time\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch, HTTP status code, HTTP response headers (array of strings)
      */
     public function timeSchedulestopwatchesPostWithHttpInfo($schedule_stopwatch)
     {
@@ -774,19 +774,19 @@ class ScheduleStopwatchesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
+                '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch',
                 '/time/schedulestopwatches'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ScheduleStopwatch', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

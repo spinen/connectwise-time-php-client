@@ -123,6 +123,7 @@ Class | Method | HTTP request | Description
  - [PatchOperation](docs/Model/PatchOperation.md)
  - [ScheduleStopwatch](docs/Model/ScheduleStopwatch.md)
  - [ServiceStatusReference](docs/Model/ServiceStatusReference.md)
+ - [TicketReference](docs/Model/TicketReference.md)
  - [TicketStopwatch](docs/Model/TicketStopwatch.md)
  - [TimeEntry](docs/Model/TimeEntry.md)
  - [ValidationError](docs/Model/ValidationError.md)

@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Model;
+namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
 
 use \ArrayAccess;
 

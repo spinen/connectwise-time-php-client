@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Model;
+namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
 
 use \ArrayAccess;
 
@@ -55,8 +55,8 @@ class TicketStopwatch implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_info' => '\Spinen\ConnectWise\Clients\Time\Model\Metadata',
-        'agreement' => '\Spinen\ConnectWise\Clients\Time\Model\AgreementReference',
+        '_info' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata',
+        'agreement' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference',
         'billable_option' => 'string',
         'business_unit_id' => 'int',
         'date_entered' => '\DateTime',
@@ -64,17 +64,17 @@ class TicketStopwatch implements ArrayAccess
         'id' => 'int',
         'internal_notes' => 'string',
         'location_id' => 'int',
-        'member' => '\Spinen\ConnectWise\Clients\Time\Model\MemberReference',
-        'mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Model\Guid',
+        'member' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference',
+        'mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid',
         'notes' => 'string',
-        'service_status' => '\Spinen\ConnectWise\Clients\Time\Model\ServiceStatusReference',
+        'service_status' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ServiceStatusReference',
         'start_time' => '\DateTime',
         'status' => 'string',
-        'ticket_id' => 'int',
-        'ticket_mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Model\Guid',
+        'ticket' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketReference',
+        'ticket_mobile_guid' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid',
         'total_pause_time' => 'int',
-        'work_role' => '\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference',
-        'work_type' => '\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference',
+        'work_role' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference',
+        'work_type' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference',
         'show_notes_in_discussion_flag' => 'bool',
         'show_notes_in_internal_flag' => 'bool',
         'show_notes_in_resolution_flag' => 'bool',
@@ -107,7 +107,7 @@ class TicketStopwatch implements ArrayAccess
         'service_status' => 'serviceStatus',
         'start_time' => 'startTime',
         'status' => 'status',
-        'ticket_id' => 'ticketId',
+        'ticket' => 'ticket',
         'ticket_mobile_guid' => 'ticketMobileGuid',
         'total_pause_time' => 'totalPauseTime',
         'work_role' => 'workRole',
@@ -140,7 +140,7 @@ class TicketStopwatch implements ArrayAccess
         'service_status' => 'setServiceStatus',
         'start_time' => 'setStartTime',
         'status' => 'setStatus',
-        'ticket_id' => 'setTicketId',
+        'ticket' => 'setTicket',
         'ticket_mobile_guid' => 'setTicketMobileGuid',
         'total_pause_time' => 'setTotalPauseTime',
         'work_role' => 'setWorkRole',
@@ -173,7 +173,7 @@ class TicketStopwatch implements ArrayAccess
         'service_status' => 'getServiceStatus',
         'start_time' => 'getStartTime',
         'status' => 'getStatus',
-        'ticket_id' => 'getTicketId',
+        'ticket' => 'getTicket',
         'ticket_mobile_guid' => 'getTicketMobileGuid',
         'total_pause_time' => 'getTotalPauseTime',
         'work_role' => 'getWorkRole',
@@ -267,7 +267,7 @@ class TicketStopwatch implements ArrayAccess
         $this->container['service_status'] = isset($data['service_status']) ? $data['service_status'] : null;
         $this->container['start_time'] = isset($data['start_time']) ? $data['start_time'] : null;
         $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['ticket_id'] = isset($data['ticket_id']) ? $data['ticket_id'] : null;
+        $this->container['ticket'] = isset($data['ticket']) ? $data['ticket'] : null;
         $this->container['ticket_mobile_guid'] = isset($data['ticket_mobile_guid']) ? $data['ticket_mobile_guid'] : null;
         $this->container['total_pause_time'] = isset($data['total_pause_time']) ? $data['total_pause_time'] : null;
         $this->container['work_role'] = isset($data['work_role']) ? $data['work_role'] : null;
@@ -307,8 +307,8 @@ class TicketStopwatch implements ArrayAccess
             $invalid_properties[] = "invalid value for 'status', must be one of #{allowed_values}.";
         }
 
-        if ($this->container['ticket_id'] === null) {
-            $invalid_properties[] = "'ticket_id' can't be null";
+        if ($this->container['ticket'] === null) {
+            $invalid_properties[] = "'ticket' can't be null";
         }
         return $invalid_properties;
     }
@@ -338,7 +338,7 @@ class TicketStopwatch implements ArrayAccess
         if (!in_array($this->container['status'], $allowed_values)) {
             return false;
         }
-        if ($this->container['ticket_id'] === null) {
+        if ($this->container['ticket'] === null) {
             return false;
         }
         return true;
@@ -347,7 +347,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Time\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata
      */
     public function getInfo()
     {
@@ -356,7 +356,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
@@ -368,7 +368,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets agreement
-     * @return \Spinen\ConnectWise\Clients\Time\Model\AgreementReference
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference
      */
     public function getAgreement()
     {
@@ -377,7 +377,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets agreement
-     * @param \Spinen\ConnectWise\Clients\Time\Model\AgreementReference $agreement
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\AgreementReference $agreement
      * @return $this
      */
     public function setAgreement($agreement)
@@ -540,7 +540,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets member
-     * @return \Spinen\ConnectWise\Clients\Time\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference
      */
     public function getMember()
     {
@@ -549,7 +549,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Time\Model\MemberReference $member
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\MemberReference $member
      * @return $this
      */
     public function setMember($member)
@@ -561,7 +561,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets mobile_guid
-     * @return \Spinen\ConnectWise\Clients\Time\Model\Guid
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid
      */
     public function getMobileGuid()
     {
@@ -570,7 +570,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets mobile_guid
-     * @param \Spinen\ConnectWise\Clients\Time\Model\Guid $mobile_guid
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid $mobile_guid
      * @return $this
      */
     public function setMobileGuid($mobile_guid)
@@ -607,7 +607,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets service_status
-     * @return \Spinen\ConnectWise\Clients\Time\Model\ServiceStatusReference
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ServiceStatusReference
      */
     public function getServiceStatus()
     {
@@ -616,7 +616,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets service_status
-     * @param \Spinen\ConnectWise\Clients\Time\Model\ServiceStatusReference $service_status
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\ServiceStatusReference $service_status
      * @return $this
      */
     public function setServiceStatus($service_status)
@@ -673,29 +673,29 @@ class TicketStopwatch implements ArrayAccess
     }
 
     /**
-     * Gets ticket_id
-     * @return int
+     * Gets ticket
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketReference
      */
-    public function getTicketId()
+    public function getTicket()
     {
-        return $this->container['ticket_id'];
+        return $this->container['ticket'];
     }
 
     /**
-     * Sets ticket_id
-     * @param int $ticket_id
+     * Sets ticket
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\TicketReference $ticket
      * @return $this
      */
-    public function setTicketId($ticket_id)
+    public function setTicket($ticket)
     {
-        $this->container['ticket_id'] = $ticket_id;
+        $this->container['ticket'] = $ticket;
 
         return $this;
     }
 
     /**
      * Gets ticket_mobile_guid
-     * @return \Spinen\ConnectWise\Clients\Time\Model\Guid
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid
      */
     public function getTicketMobileGuid()
     {
@@ -704,7 +704,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets ticket_mobile_guid
-     * @param \Spinen\ConnectWise\Clients\Time\Model\Guid $ticket_mobile_guid
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Guid $ticket_mobile_guid
      * @return $this
      */
     public function setTicketMobileGuid($ticket_mobile_guid)
@@ -737,7 +737,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets work_role
-     * @return \Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference
      */
     public function getWorkRole()
     {
@@ -746,7 +746,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets work_role
-     * @param \Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference $work_role
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkRoleReference $work_role
      * @return $this
      */
     public function setWorkRole($work_role)
@@ -758,7 +758,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Gets work_type
-     * @return \Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference
      */
     public function getWorkType()
     {
@@ -767,7 +767,7 @@ class TicketStopwatch implements ArrayAccess
 
     /**
      * Sets work_type
-     * @param \Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference $work_type
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\WorkTypeReference $work_type
      * @return $this
      */
     public function setWorkType($work_type)

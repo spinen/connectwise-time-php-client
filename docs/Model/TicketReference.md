@@ -1,10 +1,10 @@
-# AgreementReference
+# TicketReference
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
-**name** | **string** |  | [optional] 
+**summary** | **string** |  | [optional] 
 **_info** | [**\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

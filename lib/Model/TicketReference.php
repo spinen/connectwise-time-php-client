@@ -1,6 +1,6 @@
 <?php
 /**
- * Metadata
+ * TicketReference
  *
  * PHP version 5
  *
@@ -32,16 +32,15 @@ namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model;
 use \ArrayAccess;
 
 /**
- * Metadata Class Doc Comment
+ * TicketReference Class Doc Comment
  *
  * @category    Class */
- // @description Metadata of the entity
 /**
  * @package     Spinen\ConnectWise\Clients\Time
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class Metadata implements ArrayAccess
+class TicketReference implements ArrayAccess
 {
     const DISCRIMINATOR = null;
 
@@ -49,14 +48,16 @@ class Metadata implements ArrayAccess
       * The original name of the model.
       * @var string
       */
-    protected static $swaggerModelName = 'Metadata';
+    protected static $swaggerModelName = 'TicketReference';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
       * @var string[]
       */
     protected static $swaggerTypes = [
-        
+        'id' => 'int',
+        'summary' => 'string',
+        '_info' => '\Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -69,7 +70,9 @@ class Metadata implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'id' => 'id',
+        'summary' => 'summary',
+        '_info' => '_info'
     ];
 
 
@@ -78,7 +81,9 @@ class Metadata implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        
+        'id' => 'setId',
+        'summary' => 'setSummary',
+        '_info' => 'setInfo'
     ];
 
 
@@ -87,7 +92,9 @@ class Metadata implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        
+        'id' => 'getId',
+        'summary' => 'getSummary',
+        '_info' => 'getInfo'
     ];
 
     public static function attributeMap()
@@ -121,6 +128,9 @@ class Metadata implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['id'] = isset($data['id']) ? $data['id'] : null;
+        $this->container['summary'] = isset($data['summary']) ? $data['summary'] : null;
+        $this->container['_info'] = isset($data['_info']) ? $data['_info'] : null;
     }
 
     /**
@@ -145,6 +155,69 @@ class Metadata implements ArrayAccess
         return true;
     }
 
+
+    /**
+     * Gets id
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     * @param int $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets summary
+     * @return string
+     */
+    public function getSummary()
+    {
+        return $this->container['summary'];
+    }
+
+    /**
+     * Sets summary
+     * @param string $summary
+     * @return $this
+     */
+    public function setSummary($summary)
+    {
+        $this->container['summary'] = $summary;
+
+        return $this;
+    }
+
+    /**
+     * Gets _info
+     * @return \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata
+     */
+    public function getInfo()
+    {
+        return $this->container['_info'];
+    }
+
+    /**
+     * Sets _info
+     * @param \Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Model\Metadata $_info Metadata of the entity
+     * @return $this
+     */
+    public function setInfo($_info)
+    {
+        $this->container['_info'] = $_info;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      * @param  integer $offset Offset
