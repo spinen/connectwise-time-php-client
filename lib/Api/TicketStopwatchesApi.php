@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Time\Spinen\ConnectWise\Clients\Time\Api;
+namespace Spinen\ConnectWise\Clients\Time\Api;
 
 use \Spinen\ConnectWise\Clients\Time\ApiClient;
 use \Spinen\ConnectWise\Clients\Time\ApiException;
